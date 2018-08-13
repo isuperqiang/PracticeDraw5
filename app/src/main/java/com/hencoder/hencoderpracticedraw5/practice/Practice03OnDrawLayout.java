@@ -9,7 +9,6 @@ import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
 public class Practice03OnDrawLayout extends LinearLayout {
-    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Pattern pattern = new Pattern();
 
     public Practice03OnDrawLayout(Context context) {
@@ -26,6 +25,7 @@ public class Practice03OnDrawLayout extends LinearLayout {
 
     {
         // 在这里插入 setWillNotDraw(false) 以启用完整的绘制流程
+        setWillNotDraw(false);
     }
 
     @Override
